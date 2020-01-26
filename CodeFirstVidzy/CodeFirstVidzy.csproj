@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Classification.cs" />
     <Compile Include="EntityTypeConfigurations\GenreConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\TagConfiguration.cs" />
     <Compile Include="EntityTypeConfigurations\VideoConfiguration.cs" />
     <Compile Include="Migrations\202001252136305_InitialModel.cs" />
     <Compile Include="Migrations\202001252136305_InitialModel.Designer.cs">
@@ -72,7 +73,12 @@
     <Compile Include="Migrations\202001261720222_AddEntityTypeConfigurations.Designer.cs">
       <DependentUpon>202001261720222_AddEntityTypeConfigurations.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202001261740023_AddingTagsTable.cs" />
+    <Compile Include="Migrations\202001261740023_AddingTagsTable.Designer.cs">
+      <DependentUpon>202001261740023_AddingTagsTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Tag.cs" />
     <Compile Include="Video.cs" />
     <Compile Include="Genre.cs" />
     <Compile Include="Program.cs" />
@@ -98,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202001261720222_AddEntityTypeConfigurations.resx">
       <DependentUpon>202001261720222_AddEntityTypeConfigurations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202001261740023_AddingTagsTable.resx">
+      <DependentUpon>202001261740023_AddingTagsTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

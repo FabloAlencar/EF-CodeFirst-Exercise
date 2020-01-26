@@ -19,5 +19,8 @@ namespace CodeFirstVidzy
         public int GenreId { get; set; }
 
         public Classification Classification { get; set; }
+        
+        public virtual ICollection<Tag> Tags { get; set; }
+
     }
 }

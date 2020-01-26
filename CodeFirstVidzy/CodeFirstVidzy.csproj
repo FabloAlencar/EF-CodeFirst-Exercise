@@ -50,6 +50,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classification.cs" />
+    <Compile Include="EntityTypeConfigurations\GenreConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\VideoConfiguration.cs" />
     <Compile Include="Migrations\202001252136305_InitialModel.cs" />
     <Compile Include="Migrations\202001252136305_InitialModel.Designer.cs">
       <DependentUpon>202001252136305_InitialModel.cs</DependentUpon>
@@ -65,6 +67,10 @@
     <Compile Include="Migrations\202001252211539_AddClassificationCollumnToVideosTables.cs" />
     <Compile Include="Migrations\202001252211539_AddClassificationCollumnToVideosTables.Designer.cs">
       <DependentUpon>202001252211539_AddClassificationCollumnToVideosTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202001261720222_AddEntityTypeConfigurations.cs" />
+    <Compile Include="Migrations\202001261720222_AddEntityTypeConfigurations.Designer.cs">
+      <DependentUpon>202001261720222_AddEntityTypeConfigurations.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Video.cs" />
@@ -89,6 +95,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202001252211539_AddClassificationCollumnToVideosTables.resx">
       <DependentUpon>202001252211539_AddClassificationCollumnToVideosTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202001261720222_AddEntityTypeConfigurations.resx">
+      <DependentUpon>202001261720222_AddEntityTypeConfigurations.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
